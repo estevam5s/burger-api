@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [0, "error", "windows"],
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "no-shadow": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["e2e/**/*.js", "**/*.spec.js"]}],
+    "no-console": ["warn", {
+      "allow": ["info", "warn", "error"]
+    }]
+  }
+}
